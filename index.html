@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Stylesheets  -->
+    <link rel="stylesheet" href="./styles.css">
+
+    <title>KeyType</title>
+</head>
+
+<body>
+    <div class="main-container" style="display: flex;">
+        <div class="countdown">
+            <span id="timer">60</span>
+        </div>
+
+        <div class="content">
+            <section class="primary-content">
+                <p id="p1">Welcome to the KeyType, a place to sharpen your typing skills..</p>
+            </section>
+            <button id="start-button" >Start</button>  <!-- it will be disabled once the start button is clicked-->
+            <div class="next-content">  <!-- initially hidden-->
+                <input autocomplete="off" type="text" id="user-text-input">
+            </div>
+        </div>
+
+        <div class="stats"> <!-- Initially hidden, will be displayed once time is up.-->
+            <header>
+                <p>Words per minute</p>
+                <p>Characters per minute</p>
+            </header>
+            <article class="speed">
+                <p id="speed-in-wpm"></p>
+                <p id="speed-in-cpm"></p>
+            </article>
+            <article class="accuracy">
+                <p>with an accuracy of &nbsp;<span id="percentage">97.233%</span>.&nbsp; <span id="comment">You're an Octopus !</span></p>
+            </article>
+        </div>
+    </div>
+
+
+    <script type="module" src="./script.js"></script>
+</body>
+
+</html>

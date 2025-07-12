@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.countdown {
+  font-size: 48px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+
+}
+
+#timer {
+    position: absolute;
+    font-weight: 700;
+    /* color: rgb(255, 0, 72); */
+    color: rgb(234,234,234);
+    display: none;
+    left: 46%;
+    top: 25%;
+    padding: 1rem 2.5rem;
+    border: none;
+    outline: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    box-shadow: 0px 0px 60px #1f4c65;
+    
+}
+
+.main-container {
+    /* background-color: rgb(159, 153, 153); */
+    background-color: rgb(51, 51, 51);
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.main-container .content {
+    /* background-color: gray; */
+    position: relative;
+    height: 5rem;
+    width: 75%;    
+    top: 45%;
+    left: 13%;
+}
+
+.main-container .content .primary-content {
+    position: absolute;
+    width: 100%;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    color: white;
+
+}
+
+.main-container .content .primary-content p {
+    font-size: 2rem;
+    padding: 1rem;
+    color: white;
+    width: fit-content;
+    border: 3px solid rgb(77, 58, 186);
+    border-radius: 10px;
+    position: absolute;
+    user-select: none;
+    /* right: 15%; */
+    
+
+    /* font-family: "Mona Sans", sans-serif; */
+    font-family: ubunto, monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+.main-container #start-button{
+    position: absolute;
+    left: 45%;
+    top: 8rem;
+    padding: 15px;
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(39, 228, 39);
+    background-color: rgb(51, 51, 51);
+    border-radius: 10px;
+    border: 2px solid green;
+    z-index: 3;
+}
+
+.main-container #start-button:hover{
+    border: 3px solid green;
+}
+
+
+.main-container .content .next-content {
+    position: absolute;
+    height: 4rem;
+    width:100%;
+    /* border: 2px solid red; */
+    /* top: 85%; */
+    top: 120px;
+    /* left: 13%; */
+    display: flex;
+    justify-content: center;
+}
+
+#user-text-input {
+    display: none;
+    position: absolute;
+    box-sizing: border-box;
+    /* display: inline-block; */
+    width: 100%;
+    height: inherit;
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 20px;
+    left: 0px;
+    
+
+    font-family: ubunto, monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+.stats {
+  display: none;
+  width: 520px;
+  height: 200px;
+  background: #262626;
+  border-radius: 15px;
+  border: 1px solid #3F3F40;
+  position: absolute;
+  top: 450px;
+  left: 33%;
+}
+
+.stats a {
+  text-decoration: none;
+  color: #dfb2da;
+}
+
+.stats header, .speed, .accuracy {
+  display: flex;
+  align-items: center;
+}
+
+.stats header{
+    justify-content: space-between;
+    margin: 20px;
+    color: #BDBFB7;
+    font-size: 20px;
+}
+
+.stats .speed p{
+    margin-left: 20px;
+    color: white;
+    font-weight: 600;
+    font-size:35px;
+}
+.stats .speed p:nth-child(2){
+    margin-left: 183px;
+}
+
+.stats .accuracy{
+    margin-top: 35px;
+}
+.stats .accuracy p{
+    margin-left: 20px;
+    color: white;
+    font-weight: 400;
+    font-size: 23px;
+}
+
+#percentage{
+    color: #2CAD3D;
+    font-size: larger;
+    font-weight: 600;
+}
+/**
+.stats a {
+  text-decoration: none;
+}
+
+.stats header, footer, main {
+  display: flex;
+  align-items: center;
+}
+
+.stats header {
+  justify-content: space-between;
+  margin: 20px;
+  color: #BDBFB7;
+}
+
+.stats header a {
+  font-size: 15px;
+  cursor: pointer;
+  color: #BDBFB7
+}
+
+.stats main {
+  justify-content: flex-start;
+  margin: 20px;
+}
+
+.stats main p {
+  color: white;
+  font-weight: 600;
+}
+
+.stats main a {
+  color: #BDBFB7;
+  font-weight: 100;
+}
+
+footer {
+  margin: 20px;
+  font-size: 15px;
+  gap: 5px;
+}
+
+footer a {
+  color: #2CAD3D;
+  font-weight: 600;
+}
+
+footer p {
+  color: white;
+}
+**/
+
